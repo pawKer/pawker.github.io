@@ -1,0 +1,13 @@
+:root {
+  --main-accent-color: #fe7f2d;
+  --main-accent2-color: #fcca46;
+  --main-accent3-color: #a1c181;
+  --main-bg-color: #619b8a;
+  --main-hover-color: #cf6a27;
+}
+
+.footer-text {
+  font-size: 2vh;
+  font-family: "Patua One", cursive;
+  text-align: center;
+}

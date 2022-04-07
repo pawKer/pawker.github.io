@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+body {
+  height: 100%;
+  width: 100%;
+}
+.full-page {
+  height: 100vh;
+}
+
+#tsparticles::before {
+}
+
+.home-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+
+.profile-image {
+  width: 20vh;
+  border-radius: 50%;
+  border: 5px solid var(--main-accent2-color);
+}
+
+#tsparticles {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-down {
+  font-size: 4vh;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  color: white;
+}
+
+.scroll-down:hover {
+  color: var(--main-accent-color);
+}
+
+.link-icon {
+  color: white;
+}
+.link-icon:hover {
+  color: var(--main-accent-color);
+}
+
+.intro-text {
+  font-size: 5vh;
+  font-family: "Patua One", cursive;
+  color: white;
+}
+
+.intro-subtitle {
+  font-size: 4vh;
+  font-family: "Patua One", cursive;
+  color: white;
+}
+
+.highlighted-text {
+  color: var(--main-accent-color);
+  text-decoration-color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+.highlighted-text:hover {
+  color: var(--main-hover-color);
+  cursor: pointer;
+}
+
+.speaker-icon {
+  font-size: 3vh;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.elementToFadeInAndOut {
+  opacity: 1;
+  animation: fade 1250ms linear infinite;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
