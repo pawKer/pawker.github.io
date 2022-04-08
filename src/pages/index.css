@@ -1,13 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Patua+One&display=swap");
 :root {
   --main-accent-color: #fe7f2d;
   --main-accent2-color: #fcca46;
   --main-accent3-color: #a1c181;
   --main-bg-color: #619b8a;
   --main-hover-color: #cf6a27;
+
+  --main-big-font: "Patua One", cursive;
+  --main-small-font: "Montserrat", sans-serif;
 }
 
-.footer-text {
-  font-size: 2vh;
-  font-family: "Patua One", cursive;
+.section-title {
   text-align: center;
+  font-family: var(--main-big-font);
+}
+
+.section-border {
+  border-top: 5px var(--main-bg-color) solid;
+  width: 25%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
 }
