@@ -2,11 +2,12 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./About.css";
 import { GeoAlt } from "react-bootstrap-icons";
+import { ThreePlay } from "../ThreePlay/ThreePlay";
 export const About = () => {
   return (
     <Row id="about-section">
-      <Col>
-        <Row className="section-title">
+      <Col className="mx-auto" lg={10}>
+        <Row className="section-title mt-5">
           <Col>
             <h1>About</h1>
           </Col>
@@ -16,8 +17,8 @@ export const About = () => {
             <div className="mx-auto section-border"></div>
           </Col>
         </Row>
-        <Row className="mt-5 about-paragraph">
-          <Col className="mx-auto" lg={3}>
+        <Row className="my-5 about-paragraph">
+          <Col className="mx-auto" lg={5}>
             <Row>
               <h2 className="about-subtitle">Who am I?</h2>
               <p>I'm Rares 😀</p>
@@ -33,19 +34,20 @@ export const About = () => {
                 👉 I also love playing with hardware like Arduino and
                 RaspberryPi.
               </p>
+              <p>
+                My up-to-date work experience and education background can be
+                found on my LinkedIn.{" "}
+              </p>
               <div className="ml-auto location-border"></div>
             </Row>
-            <Row>
+            <Row className="mt-2">
               <Col className="about-location">
                 <GeoAlt /> <span>Manchester, UK</span>
               </Col>
             </Row>
           </Col>
-          <Col className="mx-auto" lg={3}>
-            <p>👉 Software engineer from blah blah</p>
-            <p>👉 Software engineer from blah blah</p>
-            <p>👉 Software engineer from blah blah</p>
-            <div className="mx-auto location-border"></div>
+          <Col className="mx-auto" lg={5}>
+            <ThreePlay></ThreePlay>
           </Col>
         </Row>
       </Col>

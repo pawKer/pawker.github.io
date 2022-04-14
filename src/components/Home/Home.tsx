@@ -17,11 +17,12 @@ import { particlesConfig } from "../../config/particlesConfig";
 import { socialLinks } from "../../config/info";
 import useSound from "use-sound";
 import mySound from "../../assets/full-name.mp3";
+
 export const Home = () => {
   const [playSound] = useSound(mySound);
   console.log(mySound);
   return (
-    <>
+    <div>
       <Row className={"blur-overlay"}></Row>
       <Row
         id="particlesContainer"
@@ -74,8 +75,7 @@ export const Home = () => {
                     ],
                     autoStart: true,
                     loop: true,
-                    cursor:
-                      '<span style="color: #619b8a" class="elementToFadeInAndOut"> <</span>',
+                    cursor: '<span class="elementToFadeInAndOut"> <</span>',
                     skipAddStyles: true,
                   }}
                 />
@@ -131,6 +131,6 @@ export const Home = () => {
           <h1>4th Row</h1>
         </Col>
       </Row> */}
-    </>
+    </div>
   );
 };

@@ -1,0 +1,97 @@
+:root {
+    --card-animation-duration: 0.3s;
+}
+
+.project-card {
+    text-align: center;
+    font-family: var(--main-small-font);
+    transition: 0.2s;
+}
+
+.proj-blur-overlay {
+    height: 20vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+
+.proj-color-overlay {
+    position: absolute;
+    height: 20vh;
+    top: 0;
+    right:0 ;
+    left: 0;
+    opacity: 50%;
+    z-index: 2;
+    background-color: var(--main-accent2-color);
+}
+
+.project-card:hover {
+    background: var(--main-text-color);
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-family: var(--main-big-font);
+    font-size: 3.5vh;
+    z-index: 3;
+    color: white;
+    top: 10vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.preview {
+    width: 100%;
+    height: 20vh;
+}
+
+.project-links {
+    /* position: absolute;
+    bottom: 5vh;
+    left: 0;
+    right: 0; */
+}
+
+.proj-link-icon {
+    color: var(--main-accent4-color);
+}
+
+.image-wrapper:hover > .card-title {
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: var(--card-animation-duration);
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+.image-wrapper:hover > .proj-blur-overlay { 
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: var(--card-animation-duration);
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+.image-wrapper:hover > .proj-color-overlay { 
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: var(--card-animation-duration);
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes unblur {
+    from { backdrop-filter: blur(10px); }
+    to { backdrop-filter: blur(0); }
+}
+
+@keyframes fade {
+    from { opacity: 50%; }
+    to { opacity: 0%; }
+}

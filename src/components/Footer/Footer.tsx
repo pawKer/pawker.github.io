@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <Row>
+    <Row id="footer-section">
       <Col>
         <footer>
           <p className="footer-text">Made with ❤️ and ☕ by Rares Dinu</p>

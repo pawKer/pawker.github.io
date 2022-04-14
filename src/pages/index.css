@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Patua+One&display=swap");
 :root {
-  --main-accent-color: #fe7f2d;
-  --main-accent2-color: #fcca46;
-  --main-accent3-color: #a1c181;
-  --main-bg-color: #619b8a;
+  --main-accent-color: #E39834;
+  --main-accent2-color: #E39834;
+  --main-accent3-color: #7A9B7F;
+  --main-accent4-color: #382D33;
+  --main-bg-color: #4D6D6A;
   --main-hover-color: #cf6a27;
+  --main-text-color: #EDE8D4;
 
   --main-big-font: "Patua One", cursive;
   --main-small-font: "Montserrat", sans-serif;
@@ -13,14 +15,16 @@
 .section-title {
   text-align: center;
   font-family: var(--main-big-font);
+  color: var(--main-text-color);
 }
 
 .section-border {
-  border-top: 5px var(--main-bg-color) solid;
+  border-top: 5px var(--main-accent2-color) solid;
   width: 25%;
 }
 
 body {
   height: 100%;
   width: 100%;
+  cursor: unset !important;
 }
