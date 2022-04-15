@@ -25,9 +25,9 @@ export const ProjectCard = ({
           <div className={"proj-blur-overlay"}></div>
           <h1 className="card-title">{name}</h1>
         </div>
-        <Row className="card-body">
-          <Row className="py-2 mx-auto">
-            <Col className={"h100 mx-auto d-flex flex-column"} lg={10}>
+        <Row className="p-4 mx-auto h-100">
+          <Row className="mx-auto">
+            <Col className={"mx-auto d-flex flex-column"} lg={10}>
               <Row>
                 <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
                   {description}
