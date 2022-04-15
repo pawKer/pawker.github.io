@@ -1,18 +1,8 @@
 import React, { Suspense, useRef, useState } from "react";
-import { Canvas, useFrame, useThree, useLoader } from "@react-three/fiber";
-import {
-  OrbitControls,
-  TransformControls,
-  Stars,
-  useGLTF,
-  softShadows,
-  PresentationControls,
-} from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import Lowpoly_Notebook_3 from "./Lowpoly_Notebook_3";
-import NewLaptop from "./New_Laptop";
-import Test from "./Test";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { softShadows, PresentationControls } from "@react-three/drei";
 import Macbook from "./Macbook";
+import { Spinner } from "react-bootstrap";
 softShadows();
 const Box = () => {
   const myMesh = useRef();
@@ -42,12 +32,6 @@ export const ThreePlay = () => {
     <Canvas>
       <ambientLight intensity={1} />
       <spotLight intesity={6} position={[0, 5, 10]} />
-
-      {/* <Box /> */}
-
-      {/* <Lowpoly_Notebook_3 /> */}
-      {/* <NewLaptop /> */}
-      {/* <Test /> */}
       <PresentationControls
         global={true} // Spin globally or by dragging the model
         cursor={false} // Whether to toggle cursor style on drag
