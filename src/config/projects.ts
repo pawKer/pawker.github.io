@@ -64,7 +64,7 @@ export const projects = [
       "Supports different type of metadata like base64, IPFS and API.",
       "Uses OpenSea API to check if the NFTs are listed for sale.",
     ],
-    technologies: ["Python", "Flask", "React", "Bootstrap", "Jupyter"],
+    technologies: ["Python", "Flask", "React", "Jupyter"],
     links: {
       github: "https://github.com/pawKer/nft-rarity-sniping-fe",
     },

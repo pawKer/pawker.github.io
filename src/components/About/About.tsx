@@ -50,6 +50,12 @@ export const About = () => {
             <ThreePlay></ThreePlay>
           </Col>
         </Row>
+        <Row>
+          <Col className="mx-auto" lg={5}></Col>
+          <Col className="mx-auto" lg={5}>
+            <div className="interact-text">Interact with me ☝</div>
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

@@ -25,20 +25,23 @@ export const ProjectCard = ({
           <div className={"proj-blur-overlay"}></div>
           <h1 className="card-title">{name}</h1>
         </div>
-        <Card.Body className="card-body">
-          <Row>
-            <Col className={"mx-auto"} lg={10}>
-              <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
-                {description}
-              </Card.Subtitle>
-              <p>⚡</p>
-
-              <ul>
-                {bulletPoints.map((bp) => (
-                  <li>{bp}</li>
-                ))}
-              </ul>
+        <Row className="card-body">
+          <Row className="py-2 mx-auto">
+            <Col className={"h100 mx-auto d-flex flex-column"} lg={10}>
               <Row>
+                <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
+                  {description}
+                </Card.Subtitle>
+              </Row>
+              <Row>
+                <p>⚡</p>
+                <ul>
+                  {bulletPoints.map((bp) => (
+                    <li>{bp}</li>
+                  ))}
+                </ul>
+              </Row>
+              <Row className="mt-auto">
                 <Col className="project-links">
                   {links && (
                     <a href={links.github}>
@@ -57,7 +60,7 @@ export const ProjectCard = ({
               </Row>
             </Col>
           </Row>
-        </Card.Body>
+        </Row>
         <Card.Footer>
           {technologies.map((t) => (
             <>
