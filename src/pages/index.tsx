@@ -7,11 +7,7 @@ import { About } from "../components/About/About";
 import { Footer } from "../components/Footer/Footer";
 import { Projects } from "../components/Projects/Projects";
 import { LinkNavbar } from "../components/LinkNavbar/LinkNavbar";
-import {
-  Parallax,
-  ParallaxProvider,
-  ParallaxBanner,
-} from "react-scroll-parallax";
+import ScrollToTop from "react-scroll-to-top";
 
 const IndexPage = () => {
   return (
@@ -21,6 +17,7 @@ const IndexPage = () => {
       <About></About>
       <Projects></Projects>
       <Footer></Footer>
+      <ScrollToTop smooth color="#E39834" />
     </Container>
   );
 };
