@@ -28,7 +28,7 @@ export const Projects = () => {
           xxl={3}
         >
           {projects.map((projInfo) => (
-            <ProjectCard {...projInfo} />
+            <ProjectCard key={projInfo.name} {...projInfo} />
           ))}
         </Row>
       </Col>

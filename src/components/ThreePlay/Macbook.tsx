@@ -121,4 +121,4 @@ export default function Model({ ...props }: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/macbook.glb");
+useGLTF.preload("/assets/models/macbook.glb");

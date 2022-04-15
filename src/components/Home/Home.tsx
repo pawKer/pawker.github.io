@@ -20,7 +20,6 @@ import mySound from "../../assets/full-name.mp3";
 
 export const Home = () => {
   const [playSound] = useSound(mySound);
-  console.log(mySound);
   return (
     <div>
       <Row className={"blur-overlay"}></Row>
@@ -113,24 +112,6 @@ export const Home = () => {
           </Col>
         </Row>
       </Row>
-      {/* <Row
-        style={{ height: "100vh", backgroundColor: "lightskyblue" }}
-        name="test1"
-      >
-        <Col>
-          <h1>2nd Row</h1>
-        </Col>
-      </Row>
-      <Row style={{ height: "20vh", backgroundColor: "lightcyan" }}>
-        <Col>
-          <h1>3rd Row</h1>
-        </Col>
-      </Row>
-      <Row style={{ height: "20vh", backgroundColor: "lightseagreen" }}>
-        <Col>
-          <h1>4th Row</h1>
-        </Col>
-      </Row> */}
     </div>
   );
 };

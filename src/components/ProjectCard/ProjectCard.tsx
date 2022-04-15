@@ -26,48 +26,48 @@ export const ProjectCard = ({
           <h1 className="card-title">{name}</h1>
         </div>
         <Row className="p-4 mx-auto h-100">
-          <Row className="mx-auto">
-            <Col className={"mx-auto d-flex flex-column"} lg={10}>
-              <Row>
-                <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
-                  {description}
-                </Card.Subtitle>
-              </Row>
-              <Row>
-                <p>⚡</p>
-                <ul>
-                  {bulletPoints.map((bp) => (
-                    <li>{bp}</li>
-                  ))}
-                </ul>
-              </Row>
-              <Row className="mt-auto">
-                <Col className="project-links">
-                  {links && (
-                    <a href={links.github}>
-                      <Github className={"proj-link-icon"} size={30} />
-                    </a>
-                  )}
-                  {!links && (
-                    <Badge
-                      style={{ backgroundColor: "#f44336!important" }}
-                      bg="danger"
-                    >
-                      Work in progress 🚧
-                    </Badge>
-                  )}
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          <Col className={"mx-auto d-flex flex-column"} lg={10}>
+            <Row>
+              <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
+                {description}
+              </Card.Subtitle>
+            </Row>
+            <Row>
+              <p>⚡</p>
+              <ul>
+                {bulletPoints.map((bp, index) => (
+                  <li key={`bp-${name}-${index}`}>{bp}</li>
+                ))}
+              </ul>
+            </Row>
+            <Row className="mt-auto">
+              <Col className="project-links">
+                {links && (
+                  <a href={links.github}>
+                    <Github className={"proj-link-icon"} size={30} />
+                  </a>
+                )}
+                {!links && (
+                  <Badge
+                    style={{ backgroundColor: "#f44336!important" }}
+                    bg="danger"
+                  >
+                    Work in progress 🚧
+                  </Badge>
+                )}
+              </Col>
+            </Row>
+          </Col>
         </Row>
         <Card.Footer>
-          {technologies.map((t) => (
-            <>
-              <Badge className={"tech-badge"} bg="secondary">
-                {t}
-              </Badge>{" "}
-            </>
+          {technologies.map((t, index) => (
+            <Badge
+              key={`tech-${name}-${index}`}
+              className={"tech-badge me-1"}
+              bg="secondary"
+            >
+              {t}
+            </Badge>
           ))}
         </Card.Footer>
       </Card>
