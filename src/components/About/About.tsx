@@ -5,9 +5,9 @@ import { GeoAlt } from "react-bootstrap-icons";
 import { ThreePlay } from "../ThreePlay/ThreePlay";
 export const About = () => {
   return (
-    <Row id="about-section">
+    <Row id="about-section" className="py-5">
       <Col className="mx-auto" lg={10}>
-        <Row className="section-title mt-5">
+        <Row className="section-title">
           <Col>
             <h1>About</h1>
           </Col>
@@ -17,7 +17,7 @@ export const About = () => {
             <div className="mx-auto section-border"></div>
           </Col>
         </Row>
-        <Row className="my-5 about-paragraph">
+        <Row className="mt-5 about-paragraph">
           <Col className="mx-auto" lg={5}>
             <Row>
               <h2 className="about-subtitle">Who am I?</h2>

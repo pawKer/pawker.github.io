@@ -47,7 +47,7 @@ export const projects = [
       "Highscore saving functionality is supported and a leaderboard is displayed.",
       "Hackathon project done collaboratively in less than two working days.",
     ],
-    technologies: ["HTML", "JavaScript", "Firestore"],
+    technologies: ["HTML", "JavaScript", "Firebase"],
     links: {
       github: "https://github.com/pawKer/hackathon-travelling-game",
     },

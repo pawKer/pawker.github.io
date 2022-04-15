@@ -2,10 +2,16 @@
     --card-animation-duration: 0.3s;
 }
 
+.tech-badge {
+    background-color: var(--main-accent3-color)!important;
+}
+
 .project-card {
     text-align: center;
     font-family: var(--main-small-font);
     transition: 0.2s;
+    background: var(--main-text-color);
+    color: var(--alternate-text-color);
 }
 
 .proj-blur-overlay {

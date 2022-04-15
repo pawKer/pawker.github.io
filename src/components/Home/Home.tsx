@@ -70,7 +70,7 @@ export const Home = () => {
                     strings: [
                       "Software Engineer",
                       "Expert Googler",
-                      "StackOverflow Connoisseur",
+                      "StackOverflow Specialist",
                       "My Family's IT Expert",
                     ],
                     autoStart: true,

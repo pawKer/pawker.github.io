@@ -1,4 +1,8 @@
 #projects-section {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-accent4-color);
     text-align: center;
+}
+
+.project-title {
+    color: var(--main-text-color);
 }

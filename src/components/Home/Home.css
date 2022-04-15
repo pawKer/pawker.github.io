@@ -4,7 +4,7 @@
 
 .blur-overlay {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   backdrop-filter: blur(20px);
@@ -54,7 +54,7 @@
 }
 
 .intro-text {
-  font-size: 5vh;
+  font-size: 6vh;
   font-family: var(--main-big-font);
   color: var(--main-text-color);
 }

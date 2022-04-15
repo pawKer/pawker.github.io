@@ -5,9 +5,11 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <Row id="footer-section">
-      <Col>
+      <Col className="my-3">
         <footer>
-          <p className="footer-text">Made with ❤️ and ☕ by Rares Dinu</p>
+          <p className="footer-text my-auto">
+            Made with ❤️ and ☕ by Rares Dinu
+          </p>
         </footer>
       </Col>
     </Row>

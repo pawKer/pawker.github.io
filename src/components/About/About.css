@@ -1,5 +1,5 @@
 #about-section {
-  color: var(--main-text-color);
+  color: var(--alternate-text-color);
   background: var(--main-bg-color);
 }
 
@@ -23,5 +23,5 @@
   text-align: left;
   font-family: var(--main-small-font);
   font-size: 1.25vh;
-  color: var(--main-text-color);
+  color: var(--alternate-text-color);
 }

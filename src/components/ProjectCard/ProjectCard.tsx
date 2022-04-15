@@ -28,7 +28,6 @@ export const ProjectCard = ({
         <Card.Body className="card-body">
           <Row>
             <Col className={"mx-auto"} lg={10}>
-              {/* <Card.Title className="card-title mb-4">{name}</Card.Title> */}
               <Card.Subtitle className="mb-4" style={{ fontWeight: "bold" }}>
                 {description}
               </Card.Subtitle>
@@ -46,7 +45,14 @@ export const ProjectCard = ({
                       <Github className={"proj-link-icon"} size={30} />
                     </a>
                   )}
-                  {!links && <Badge bg="danger">Work in progress 🚧</Badge>}
+                  {!links && (
+                    <Badge
+                      style={{ backgroundColor: "#f44336!important" }}
+                      bg="danger"
+                    >
+                      Work in progress 🚧
+                    </Badge>
+                  )}
                 </Col>
               </Row>
             </Col>
@@ -55,7 +61,9 @@ export const ProjectCard = ({
         <Card.Footer>
           {technologies.map((t) => (
             <>
-              <Badge bg="secondary">{t}</Badge>{" "}
+              <Badge className={"tech-badge"} bg="secondary">
+                {t}
+              </Badge>{" "}
             </>
           ))}
         </Card.Footer>

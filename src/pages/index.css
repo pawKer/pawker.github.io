@@ -4,9 +4,10 @@
   --main-accent2-color: #E39834;
   --main-accent3-color: #7A9B7F;
   --main-accent4-color: #382D33;
-  --main-bg-color: #4D6D6A;
+  --main-bg-color: #EDE8D4;
   --main-hover-color: #cf6a27;
   --main-text-color: #EDE8D4;
+  --alternate-text-color: #382D33;
 
   --main-big-font: "Patua One", cursive;
   --main-small-font: "Montserrat", sans-serif;
@@ -15,7 +16,7 @@
 .section-title {
   text-align: center;
   font-family: var(--main-big-font);
-  color: var(--main-text-color);
+  color: var(--alternate-text-color);
 }
 
 .section-border {
@@ -24,7 +25,11 @@
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   cursor: unset !important;
+}
+
+html {
+  height: -webkit-fill-available;
 }

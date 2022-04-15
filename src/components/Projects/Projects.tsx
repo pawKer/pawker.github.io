@@ -6,9 +6,9 @@ import { projects } from "../../config/projects";
 import "./Projects.css";
 export const Projects = () => {
   return (
-    <Row id="projects-section">
+    <Row id="projects-section" className="py-5">
       <Col className="mx-auto" lg={6}>
-        <Row className="section-title">
+        <Row className="section-title project-title">
           <Col>
             <h1>Projects</h1>
           </Col>
@@ -18,7 +18,15 @@ export const Projects = () => {
             <div className="mx-auto section-border"></div>
           </Col>
         </Row>
-        <Row className="g-3 mx-auto my-5" xs={1} sm={2} md={2} lg={3}>
+        <Row
+          className="g-3 mx-auto mt-5"
+          xs={1}
+          sm={2}
+          md={2}
+          lg={2}
+          xl={2}
+          xxl={3}
+        >
           {projects.map((projInfo) => (
             <ProjectCard {...projInfo} />
           ))}
