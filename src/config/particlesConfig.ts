@@ -3,6 +3,7 @@ import { IOptions } from "tsparticles";
 
 export const particlesConfig: IOptions[] = [
   {
+    // Balls rising up
     autoPlay: true,
     background: {
       color: {
@@ -548,6 +549,7 @@ export const particlesConfig: IOptions[] = [
     },
   },
   {
+    // Links moving by themselves and with cursor
     autoPlay: true,
     background: {
       color: {
@@ -912,7 +914,7 @@ export const particlesConfig: IOptions[] = [
           factor: 1000,
         },
         limit: 0,
-        value: 80,
+        value: 50,
       },
       opacity: {
         random: {
@@ -1075,6 +1077,7 @@ export const particlesConfig: IOptions[] = [
     zLayers: 100,
   },
   {
+    // Links moving with cursor
     autoPlay: true,
     background: {
       color: {
@@ -1439,7 +1442,7 @@ export const particlesConfig: IOptions[] = [
           factor: 1000,
         },
         limit: 0,
-        value: 100,
+        value: 50,
       },
       opacity: {
         random: {
@@ -1605,6 +1608,7 @@ export const particlesConfig: IOptions[] = [
     zLayers: 100,
   },
   {
+    // Colliding balls
     autoPlay: true,
     background: {
       color: {
