@@ -1,5 +1,5 @@
-import React, { Suspense, useState } from "react";
-import { Badge, Card, Col, Row, Spinner } from "react-bootstrap";
+import React, { useState } from "react";
+import { Badge, Card, Col, Row } from "react-bootstrap";
 import { Github } from "react-bootstrap-icons";
 import { ProjectCardProps } from "../../../@types/custom";
 import "./ProjectCard.css";

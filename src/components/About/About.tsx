@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Col, Row, Spinner } from "react-bootstrap";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 import "./About.css";
 import { GeoAlt } from "react-bootstrap-icons";
 import { ThreePlay } from "../ThreePlay/ThreePlay";
@@ -53,9 +53,7 @@ export const About = () => {
               </Row>
             </Col>
             <Col className="mx-auto" lg={5}>
-              <Suspense fallback={<Spinner animation="border" />}>
-                <ThreePlay></ThreePlay>
-              </Suspense>
+              <ThreePlay></ThreePlay>
             </Col>
           </Row>
           <Row>
