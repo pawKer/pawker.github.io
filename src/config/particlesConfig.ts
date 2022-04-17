@@ -570,8 +570,8 @@ export const particlesConfig: IOptions[] = [
       enable: false,
     },
     fullScreen: {
-      enable: true,
-      zIndex: 1,
+      enable: false,
+      zIndex: -1,
     },
     detectRetina: true,
     duration: 0,
@@ -1097,8 +1097,8 @@ export const particlesConfig: IOptions[] = [
       enable: false,
     },
     fullScreen: {
-      enable: true,
-      zIndex: 1,
+      enable: false,
+      zIndex: -1,
     },
     detectRetina: true,
     duration: 0,
@@ -1627,8 +1627,8 @@ export const particlesConfig: IOptions[] = [
       enable: false,
     },
     fullScreen: {
-      enable: true,
-      zIndex: 1,
+      enable: false,
+      zIndex: -1,
     },
     detectRetina: true,
     duration: 0,
