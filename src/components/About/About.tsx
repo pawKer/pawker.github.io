@@ -8,14 +8,14 @@ export const About = () => {
   return (
     <Row id="about-section" className="py-5">
       <Col className="mx-auto" lg={10}>
-        <Fade distance={"2vh"} left>
+        <Fade distance={"20px"} left>
           <Row className="section-title">
             <Col>
               <h1>About</h1>
             </Col>
           </Row>
         </Fade>
-        <Fade distance={"2vh"} right>
+        <Fade distance={"20px"} right>
           <Row>
             <Col>
               <div className="mx-auto section-border"></div>
