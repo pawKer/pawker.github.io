@@ -1,14 +1,9 @@
-<p align="center">
-  <a href="https://raresdinu.ro" style="font-size: 5vh">
-    🌍
-  </a>
-</p>
-<h1 align="center">
+<h1 align="center">🌍<br>
   My React Portfolio Website
 </h1>
 
 <img src="./preview/preview.gif" />
-<a href="https://raresdinu.ro"><h2 align="center">Live preview </h2></a>
+<h3 align="center"><a href="https://raresdinu.ro" target="_blank">Live preview </a></h3>
 
 ## 💬 Context
 
