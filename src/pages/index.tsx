@@ -13,7 +13,7 @@ import BackToTop from "../components/BackToTop/BackToTop";
 
 const IndexPage = () => {
   return (
-    <Container fluid>
+    <Container className={"main-container"} fluid>
       <Helmet>
         <title>{config!.siteMetadata!.title as string}</title>
       </Helmet>
