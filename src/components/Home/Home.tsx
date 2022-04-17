@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import profile from "../../images/profile.jpeg";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
+import { getRandomNumberInRange } from "../../config/utils";
 import { Link } from "react-scroll";
 import "./Home.css";
 import {
@@ -20,6 +21,11 @@ import mySound from "../../assets/full-name.mp3";
 
 export const Home = () => {
   const [playSound] = useSound(mySound);
+
+  const particlesBgIndex = useRef(
+    getRandomNumberInRange(0, particlesConfig.length - 1)
+  );
+  console.log("Using particles: ", particlesBgIndex);
   return (
     <div>
       <Row className={"blur-overlay"}></Row>
@@ -28,7 +34,7 @@ export const Home = () => {
         className={"full-page"}
         style={{ textAlign: "center" }}
       >
-        <Particles options={particlesConfig} />
+        <Particles options={particlesConfig[particlesBgIndex.current]} />
       </Row>
 
       <Row style={{ textAlign: "center" }}>
@@ -85,31 +91,33 @@ export const Home = () => {
             <Fade>
               <Col>
                 <a href={socialLinks.github}>
-                  <Github className={"m-2 link-icon"} size={50} />
+                  <Github className={"m-2 link-icon"} />
                 </a>
                 <a href={socialLinks.linkedin}>
-                  <Linkedin className={"m-2 link-icon"} size={50} />
+                  <Linkedin className={"m-2 link-icon"} />
                 </a>
                 <a href={"mailto:" + socialLinks.email}>
-                  <Envelope className={"m-2 link-icon"} size={50} />
+                  <Envelope className={"m-2 link-icon"} />
                 </a>
               </Col>
             </Fade>
           </Row>
         </Row>
         <Row className={"mx-auto scroll-down"}>
-          <Col>
-            <Link
-              activeClass="active"
-              to="about-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <ChevronDown />
-            </Link>
-          </Col>
+          <Fade>
+            <Col>
+              <Link
+                activeClass="active"
+                to="about-section"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                <ChevronDown />
+              </Link>
+            </Col>
+          </Fade>
         </Row>
       </Row>
     </div>
