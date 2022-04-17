@@ -3,7 +3,7 @@ import { Col, Row, Spinner } from "react-bootstrap";
 import "./About.css";
 import { GeoAlt } from "react-bootstrap-icons";
 import { ThreePlay } from "../ThreePlay/ThreePlay";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 export const About = () => {
   return (
     <Row id="about-section" className="py-5">

@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from "react";
 import { Badge, Card, Col, Row, Spinner } from "react-bootstrap";
 import { Github } from "react-bootstrap-icons";
+import { ProjectCardProps } from "../../../@types/custom";
 import "./ProjectCard.css";
 
 export const ProjectCard = ({
@@ -10,7 +11,7 @@ export const ProjectCard = ({
   bulletPoints,
   technologies,
   links,
-}) => {
+}: ProjectCardProps) => {
   const [imageSrc, setImageSrc] = useState(preview.static);
   return (
     <Col className="mx-auto mt-3">

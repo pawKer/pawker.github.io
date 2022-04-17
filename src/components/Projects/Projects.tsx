@@ -1,9 +1,8 @@
-import React, { Suspense } from "react";
-import { Card, Col, Row, Spinner } from "react-bootstrap";
-import vidifyStatic from "../../assets/vidify-static.jpg";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { projects } from "../../config/projects";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 import "./Projects.css";
 export const Projects = () => {
   return (

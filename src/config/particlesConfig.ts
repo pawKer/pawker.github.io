@@ -1,4 +1,7 @@
-export const particlesConfig = [
+// @ts-nocheck
+import { IOptions } from "tsparticles";
+
+export const particlesConfig: IOptions[] = [
   {
     autoPlay: true,
     background: {

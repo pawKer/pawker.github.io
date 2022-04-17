@@ -28,7 +28,7 @@ const IndexPage = () => {
         }}
       />
       <Helmet>
-        <title>{config.siteMetadata.title}</title>
+        <title>{config!.siteMetadata!.title as string}</title>
       </Helmet>
       <Home></Home>
       <LinkNavbar></LinkNavbar>

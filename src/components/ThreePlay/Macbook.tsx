@@ -51,7 +51,7 @@ export default function Model({ ...props }: JSX.IntrinsicElements["group"]) {
     "/assets/models/macbook.glb"
   ) as GLTFResult;
   useFrame(({ clock }) => {
-    group!.current.rotation.y = clock.getElapsedTime();
+    if (group) group.current!.rotation.y = clock.getElapsedTime();
   });
   return (
     <group ref={group} {...props} dispose={null} scale={1}>

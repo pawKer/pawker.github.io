@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import { Button, Container, Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import profile from "../../images/profile.jpeg";
 import Typewriter from "typewriter-effect";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 import { getRandomNumberInRange } from "../../config/utils";
 import { Link } from "react-scroll";
 import "./Home.css";

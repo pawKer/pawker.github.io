@@ -1,4 +1,6 @@
-export const projects = [
+import { ProjectCardProps } from "../../@types/custom";
+
+export const projects: ProjectCardProps[] = [
   {
     name: "Vidify",
     preview: {

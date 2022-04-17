@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./Footer.css";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 export const Footer = () => {
   return (
     <Row id="footer-section">
