@@ -22,21 +22,22 @@ export const Projects = () => {
             </Col>
           </Row>
         </Fade>
-        <Fade distance={"5vh"} bottom>
-          <Row
-            className="g-3 mx-auto mt-5"
-            xs={1}
-            sm={2}
-            md={2}
-            lg={2}
-            xl={2}
-            xxl={3}
-          >
-            {projects.map((projInfo) => (
+
+        <Row
+          className="g-3 mx-auto mt-5"
+          xs={1}
+          sm={2}
+          md={2}
+          lg={2}
+          xl={2}
+          xxl={3}
+        >
+          {projects.map((projInfo) => (
+            <Fade key={projInfo.name} bottom distance="5vh">
               <ProjectCard key={projInfo.name} {...projInfo} />
-            ))}
-          </Row>
-        </Fade>
+            </Fade>
+          ))}
+        </Row>
       </Col>
     </Row>
   );

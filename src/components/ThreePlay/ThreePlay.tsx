@@ -31,7 +31,7 @@ export const ThreePlay = () => {
   return (
     <Canvas>
       <ambientLight intensity={1} />
-      <spotLight intensity={6} position={[0, 5, 10]} />
+      <spotLight intensity={2} position={[0, 5, 10]} />
       <PresentationControls
         global={true} // Spin globally or by dragging the model
         snap={true} // Snap-back to center (can also be a spring config)

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Home } from "../components/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { About } from "../components/About/About";
 import { Footer } from "../components/Footer/Footer";
 import { Projects } from "../components/Projects/Projects";
@@ -15,7 +15,7 @@ import { ArrowUp } from "react-bootstrap-icons";
 const IndexPage = () => {
   return (
     <Container fluid>
-      <ScrollToTop
+      {/* <ScrollToTop
         smooth
         component={<ArrowUp style={{ textAlign: "center" }} />}
         top={300}
@@ -24,9 +24,11 @@ const IndexPage = () => {
           backgroundColor: "#EDE8D4",
           zIndex: 100,
           textAlign: "center",
-          verticalAlign: "middle",
+          width: "5vh",
+          height: "5vh",
+          fontSize: "2vh",
         }}
-      />
+      /> */}
       <Helmet>
         <title>{config!.siteMetadata!.title as string}</title>
       </Helmet>

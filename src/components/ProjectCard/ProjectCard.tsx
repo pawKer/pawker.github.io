@@ -14,7 +14,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   const [imageSrc, setImageSrc] = useState(preview.static);
   return (
-    <Col className="mx-auto mt-3">
+    <Col className="mx-auto mt-3 h-100">
       <Card className={"project-card h-100"}>
         <div
           className={"image-wrapper"}

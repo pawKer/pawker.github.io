@@ -68,7 +68,7 @@ export const particlesConfig: IOptions[] = [
           distance: 200,
         },
         bubble: {
-          distance: 400,
+          distance: 200,
           duration: 2,
           mix: false,
           opacity: 0.1,
@@ -1729,7 +1729,7 @@ export const particlesConfig: IOptions[] = [
           duration: 0.4,
           factor: 100,
           speed: 1,
-          maxSpeed: 50,
+          maxSpeed: 25,
           easing: "ease-out-quad",
           divs: {
             distance: 200,
