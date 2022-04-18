@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { ArrowUp } from "react-bootstrap-icons";
 import "./BackToTop.css";
-const BackToTop = () => {
+export const BackToTop = () => {
   const [topButtonVisible, setTopButtonVisible] = useState(false);
   const scrollFunction = () => {
     if (typeof window !== "undefined") {
@@ -44,5 +44,3 @@ const BackToTop = () => {
     </Link>
   );
 };
-
-export default BackToTop;

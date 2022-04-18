@@ -7,16 +7,13 @@ import { About } from "../components/About/About";
 import { Footer } from "../components/Footer/Footer";
 import { Projects } from "../components/Projects/Projects";
 import { LinkNavbar } from "../components/LinkNavbar/LinkNavbar";
-import { Helmet } from "react-helmet";
-import config from "../../gatsby-config";
-import BackToTop from "../components/BackToTop/BackToTop";
+import { BackToTop } from "../components/BackToTop/BackToTop";
+import { WebHead } from "../components/WebHead/WebHead";
 
 const IndexPage = () => {
   return (
     <Container className={"main-container"} fluid>
-      <Helmet>
-        <title>{config!.siteMetadata!.title as string}</title>
-      </Helmet>
+      <WebHead />
       <BackToTop />
       <Home></Home>
       <LinkNavbar></LinkNavbar>

@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Row, Col, Image } from "react-bootstrap";
-import profile from "../../images/profile.jpeg";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-reveal";
 import { getRandomNumberInRange } from "../../config/utils";
@@ -44,8 +43,9 @@ export const Home = () => {
               <Col>
                 <Image
                   id="repulse-div"
-                  src={profile}
+                  src={"./assets/images/profile.jpg"}
                   className={"profile-image"}
+                  alt={"Rares Dinu's profile picture"}
                 ></Image>
               </Col>
             </Row>

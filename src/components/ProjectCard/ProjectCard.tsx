@@ -21,7 +21,7 @@ export const ProjectCard = ({
           onMouseEnter={() => setImageSrc(preview.gif)}
           onMouseLeave={() => setImageSrc(preview.static)}
         >
-          <Card.Img src={imageSrc} className={"preview"} />
+          <Card.Img src={imageSrc} className={"preview"} alt={name} />
           <div className={"proj-color-overlay"}></div>
           <div className={"proj-blur-overlay"}></div>
           <h1 className="card-title">{name}</h1>

@@ -5,6 +5,9 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Rares Dinu`,
     siteUrl: `https://raresdinu.ro`,
+    metaDescription:
+      "Personal software portfolio website. Here you can find my latest projects and up-to-date contact information.",
+    image: "./assets/images/profile.jpg",
   },
   plugins: [
     {
