@@ -9,7 +9,17 @@ export const Footer = () => {
         <Fade>
           <footer>
             <p className="footer-text my-auto">
-              Made with ❤️ and ☕ by Rares Dinu
+              Made with ❤️{" "}
+              <a
+                href="https://doesryankavanaughlooklikeharveyweinstein.com/"
+                style={{
+                  textDecoration: "none",
+                  color: "var(--main-accent4-color)",
+                }}
+              >
+                and
+              </a>{" "}
+              ☕ by Rares Dinu
             </p>
           </footer>
         </Fade>
