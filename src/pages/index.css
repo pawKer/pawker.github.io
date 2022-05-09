@@ -33,6 +33,7 @@ body {
   min-height: -webkit-fill-available;
   cursor: unset !important;
   overflow-x: hidden;
+  background-color: var(--main-accent4-color);
 }
 
 html {
