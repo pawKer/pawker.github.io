@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://raresdinu.ro`,
     metaDescription:
       "Personal software portfolio website. Here you can find my latest projects and up-to-date contact information.",
-    image: "./assets/images/profile.jpg",
+    image: "assets/images/profile.jpg",
   },
   plugins: [
     {
@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "src/images/",
       },
       __key: "images",
     },
