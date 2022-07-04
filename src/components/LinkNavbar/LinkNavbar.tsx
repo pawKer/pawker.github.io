@@ -15,7 +15,7 @@ export const LinkNavbar = () => {
               <Nav.Link href="#projects-section">Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#home">Experience</Nav.Link>
+              <Nav.Link href="#blog-section">Blog</Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

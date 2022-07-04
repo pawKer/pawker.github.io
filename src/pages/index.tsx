@@ -5,10 +5,11 @@ import "./index.css";
 import { Container } from "react-bootstrap";
 import { About } from "../components/About/About";
 import { Footer } from "../components/Footer/Footer";
-import { Projects } from "../components/Projects/Projects";
+import { Blog } from "../components/Blog/Blog";
 import { LinkNavbar } from "../components/LinkNavbar/LinkNavbar";
 import { BackToTop } from "../components/BackToTop/BackToTop";
 import { WebHead } from "../components/WebHead/WebHead";
+import { Projects } from "../components/Projects/Projects";
 
 const IndexPage = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <LinkNavbar></LinkNavbar>
       <About></About>
       <Projects></Projects>
+      <Blog></Blog>
       <Footer></Footer>
     </Container>
   );

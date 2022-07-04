@@ -101,5 +101,8 @@ export const projects: ProjectCardProps[] = [
       "Added review taxi functionality with scores.",
     ],
     technologies: ["Node", "React", "Firebase", "Jupyter"],
+    links: {
+      website: "https://monkeymeter.ro",
+    },
   },
 ];

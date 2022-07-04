@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Badge, Card, Col, Row } from "react-bootstrap";
-import { Github } from "react-bootstrap-icons";
+import { Github, Link45deg } from "react-bootstrap-icons";
 import { ProjectCardProps } from "../../../@types/custom";
 import "./ProjectCard.css";
 
@@ -43,9 +43,22 @@ export const ProjectCard = ({
             </Row>
             <Row className="mt-auto">
               <Col className="project-links">
-                {links && (
-                  <a href={links.github}>
+                {links && links.github && (
+                  <a
+                    href={links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className={"proj-link-icon"} size={30} />
+                  </a>
+                )}
+                {links && links.website && (
+                  <a
+                    href={links.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Link45deg className={"proj-link-icon"} size={30} />
                   </a>
                 )}
                 {!links && (

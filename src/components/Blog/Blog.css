@@ -1,0 +1,27 @@
+#blog-section {
+    background-color: var(--main-text-color);
+    text-align: center;
+}
+
+.blog-title {
+    color: var(--alternate-text-color);
+}
+
+.blog-paragraph {
+    font-family: var(--main-small-font);
+    font-size: 1.5vh;
+    font-weight: 300;
+}
+
+.recent-post a {
+    color: var(--main-accent2-color);
+    text-decoration-color: var(--main-accent2-color)
+}
+
+.recent-post a:hover {
+    color: var(--main-hover-color);
+}
+
+.custom-spinner {
+    color: var(--main-accent2-color);
+}

@@ -8,6 +8,7 @@ export interface ProjectCardProps {
   bulletPoints: string[];
   technologies: string[];
   links?: {
-    github: string;
+    github?: string;
+    website?: string;
   };
 }
